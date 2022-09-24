@@ -28,7 +28,7 @@ onMounted(() => {
       text:
         Reflect.ownKeys(props.data.spm)
           .map((key) => props.data.spm[key as keyof ChartData["spm"]])
-          .join(".") + "转化数据",
+          .join(".") + "点击转化数据",
     },
     toolbox: {
       feature: {
