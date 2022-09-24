@@ -72,10 +72,12 @@ onMounted(() => {
             fontSize: 20,
           },
         },
-        data: props.data.funnelChart.map((element) => ({
-          value: element.count,
-          name: `${element.label}：${element.count}`,
-        })),
+        data: props.data.funnelChart
+          .map((element) => ({
+            value: element.count,
+            name: `${element.label}：${element.count}`,
+          }))
+          .reverse(),
       },
     ],
   });
